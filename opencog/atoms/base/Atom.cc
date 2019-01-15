@@ -447,7 +447,7 @@ std::string oc_to_string(const IncomingSet& iset, const std::string& indent)
 }
 
 } // ~namespace opencog
-
+// overloading operator
 namespace std {
 
 
