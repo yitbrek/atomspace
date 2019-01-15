@@ -447,3 +447,16 @@ std::string oc_to_string(const IncomingSet& iset, const std::string& indent)
 }
 
 } // ~namespace opencog
+
+namespace std {
+
+
+ostream& operator<<(ostream& out, const opencog::IncomingSet& iset)
+{
+	return out << oc_to_string(iset);
+}
+
+}
+
+
+
